@@ -54,20 +54,27 @@
                 Book your seat or room ahead online.
                 <button class="btn">BOOK NOW</button></p>
 
-                <script type="text/javascript">var submitted=false;</script>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){
-                    window.location='https://studyvalleymm.netlify.app/';}"></iframe>
+                <div class="thankyou">
+                    <div class="tywrapper">
+                    <h1>Thank you for submiting the booking and you will be shortly contacted to confirm your book.</h1>
+                    <a class="tyclose" href="#bookings">&times;</a>
+                </div>
+                </div>
 
+                <script type="text/javascript">var submitted=false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){popup();}" o></iframe>
+                
                         <div class="formcontainer">
                             <div class="wrapper">
                             <h1>Please Fill up The Form</h1><a class="close" href="#bookings">&times;</a>
                             <br>
                             <div class="content">
                             
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLScnD098CGGCty1MqQP9gpxz359bXQL6TLP7OYswfxZaZ1vR2g/formResponse" 
-     target="hidden_iframe" 
-     onsubmit="submitted=true" 
-     method="POST">
+                            <form action="https://docs.google.com/forms/d/e/1FAIpQLScnD098CGGCty1MqQP9gpxz359bXQL6TLP7OYswfxZaZ1vR2g/formResponse" 
+                                target="hidden_iframe" 
+                                onsubmit="submitted=true" 
+                                method="POST"
+                                onSubmit="alert('Thank you for your feedback.');">
 
                                         <label>Name</label>
                                         <input placeholder="Full Name" type="text" name="entry.1684385913" required="" oninvalid="this.setCustomValidity('Please Enter your Name')" oninput="setCustomValidity('')"><br>
@@ -96,10 +103,14 @@
                                         <input type="submit" value="Submit">
 
                                     </form>
+
+                              
                             </div>
                             </div>
                         </div>
-        </div>
+                    </div>
+
+        
     </section>
 
     <section class="about" id="about">

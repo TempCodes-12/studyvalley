@@ -235,6 +235,59 @@
     transition: 0.7s;
   }
 
+  .thankyou {
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 100%;
+    left: 100%;
+    width: 100%;
+    display: block;
+    z-index: 130;
+    padding-top: 200px;
+    transition: 0.8s;
+    border-radius: 5px;
+    padding: 16px 32px;
+  }
+
+  .thankyou.is-active {
+    top: 0;
+    left: 0;
+    transition: 0.7s;
+  }
+
+  .tywrapper {
+    margin: 70px auto;
+    padding: 20px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    width: 90%;
+    height: 300px;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+
+  .tywrapper h1 {
+    text-align: center;
+    color: #333;
+    font-size: medium;
+    padding: 120px 0 145px;
+  }
+  .tywrapper .tyclose {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .tywrapper .tyclose:hover {
+    color: #d80606;
+  }
+  
+
   .wrapper {
     margin: 70px auto;
     padding: 20px;
@@ -342,5 +395,7 @@
     text-transform: uppercase;
     letter-spacing: 3px;
   }
+
+  
 
   
