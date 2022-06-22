@@ -20,7 +20,6 @@ const formcontainer = document.querySelector('.formcontainer')
 btn.addEventListener('click', function(){
     btn.classList.toggle('is-active');
     formcontainer.classList.toggle('is-active');
-    
 })
 
 
@@ -31,14 +30,16 @@ document.querySelectorAll('.close').forEach(n => n.
     }))
     
  //thank you message
- 
+ const checkmark = document.querySelector('.checkmark');
  const thankyou = document.querySelector('.thankyou')
 
  function popup () {
     return formcontainer.classList.remove('is-active'),
-    thankyou.classList.toggle('is-active');
+    thankyou.classList.toggle('is-active'),
+    checkmark.classList.toggle('is-active');
  }
 
 document.querySelectorAll('.tyclose').forEach(n => n.addEventListener("click",() =>{
     thankyou.classList.remove('is-active');
+    checkmark.classList.remove('is-active');
 }))
