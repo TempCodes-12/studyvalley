@@ -404,14 +404,15 @@
   stroke-width: 2;
   stroke-miterlimit: 10;
   stroke: #7ac142;
-  fill: none;animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards
 }
-
 .checkmark{
-  color: transparent;
+  visibility: hidden;
 }
 .checkmark.is-active{
   width: 56px;
+  visibility: visible;
   height: 56px;
   border-radius: 50%;
   display: flex;
@@ -428,11 +429,12 @@
   stroke-dashoffset: 48;
   animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards
 }
-  @keyframes stroke{
-    100%{stroke-dashoffset: 0}
-  }
-  @keyframes scale{
-    0%, 100%{transform: none}50%{transform: scale3d(1.1, 1.1, 1)}
-  }@keyframes fill{
-    100%{box-shadow: inset 0px 0px 0px 30px #7ac142}
-  }
+@keyframes stroke{
+  100%{stroke-dashoffset: 0}
+}
+@keyframes scale{
+  0%, 100%{transform: none}50%{transform: scale3d(1.1, 1.1, 1)}
+}
+@keyframes fill{
+  100%{box-shadow: inset 0px 0px 0px 30px #7ac142}
+}
