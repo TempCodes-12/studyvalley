@@ -4,6 +4,7 @@
     --primary: #c18b40;
     --light: #EEEEEE;
     --dark: #222244;
+    --form: #413b3b;
   }
   
   *{
@@ -269,7 +270,7 @@
 
   .tywrapper h1 {
     text-align: center;
-    color: #333;
+    color: var(--form);
     font-size: medium;
     padding: auto;
   }
@@ -301,7 +302,7 @@
   }
   .wrapper h1 {
     margin-top: 0;
-    color: #333;
+    color: var(--form);
     font-size: medium;
     padding: 2px;
   }
@@ -313,7 +314,7 @@
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    color: #333;
+    color: var(--form);
   }
   .wrapper .close:hover {
     color: #d80606;
@@ -385,7 +386,7 @@
   }
 
   input[type="submit"] {
-    background-color: #413b3b;
+    background-color: var(--form);
     color: #fff;
     padding: 15px 50px;
     border: none;
@@ -403,7 +404,7 @@
   stroke-dashoffset: 166;
   stroke-width: 2;
   stroke-miterlimit: 10;
-  stroke: #413b3b;
+  stroke: var(--form);
   fill: none;
   animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards
 }
@@ -420,14 +421,14 @@
   stroke: #fff;
   stroke-miterlimit: 10;
   margin: 5% auto;
-  box-shadow: inset 0px 0px 0px #413b3b;
-  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both
+  box-shadow: inset 0px 0px 0px var(--form);
+  animation: fill .7s ease-in-out .7s forwards, scale .6s ease-in-out 1.2s both
 }
 .checkmark__check{
   transform-origin: 50% 50%;
   stroke-dasharray: 48;
   stroke-dashoffset: 48;
-  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards
+  animation: stroke 1.3s cubic-bezier(0.65, 0, 0.45, 1) 1.4s forwards
 }
 @keyframes stroke{
   100%{stroke-dashoffset: 0}
@@ -436,5 +437,5 @@
   0%, 100%{transform: none}50%{transform: scale3d(1.1, 1.1, 1)}
 }
 @keyframes fill{
-  100%{box-shadow: inset 0px 0px 0px 30px #413b3b}
+  100%{box-shadow: inset 0px 0px 0px 30px var(--form)}
 }
