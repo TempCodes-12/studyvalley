@@ -418,6 +418,7 @@
   border-radius: 50%;
   display: flex;
   stroke-width: 2;
+  align-content: center;
   stroke: #fff;
   stroke-miterlimit: 10;
   margin: 5% auto;
