@@ -401,6 +401,7 @@
 
 .checkmark__circle{
   stroke-dasharray: 166;
+  align-content: center;  
   stroke-dashoffset: 166;
   stroke-width: 2;
   stroke-miterlimit: 10;
