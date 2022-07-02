@@ -404,6 +404,8 @@
 .checkmark_space{
   display: flex;
   flex-flow: column;
+  align-items: center;
+  align-content: center;
 }
 
 .checkmark__circle{
