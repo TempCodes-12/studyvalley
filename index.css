@@ -401,6 +401,11 @@
   flex: 1;
 }
 
+.checkmark_space{
+  display: flex;
+  flex-flow: column;
+}
+
 .checkmark__circle{
   stroke-dasharray: 166;
   align-content: center;  
