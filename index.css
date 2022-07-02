@@ -397,7 +397,9 @@
     letter-spacing: 3px;
   }
 
- 
+.space{
+  flex: 1;
+}
 
 .checkmark__circle{
   stroke-dasharray: 166;
@@ -418,6 +420,7 @@
   height: 56px;
   border-radius: 50%;
   display: flex;
+  flex: 1;
   stroke-width: 2;
   align-content: center;
   stroke: #fff;
